@@ -1,3 +1,42 @@
+:root {
+    --text_color : #e0fbfc;
+    --butText_color : #e0fbfc;
+    --button_color : #a4133c;
+    --color : #fff;
+    --div_color : #3d5a80;
+    --bg_color : #98c1d9;
+}
+/*
+:root {
+    --text_color : #415a77;
+    --button_color : #415a77;
+    --color : #e0e1dd;
+    --div_color : #1b263b;
+    --bg_color : #0d1b2a;
+}
+:root {
+    --text_color : #669bbc;
+    --button_color : #c1121f;
+    --color : #fdf0d5;
+    --div_color : #003049;
+    --bg_color : #669bbc;
+}
+:root {
+    --text_color : #ee6c4d;
+    --button_color : #ee6c4d;
+    --color : #e0fbfc;
+    --div_color : #293241;
+    --bg_color : #3d5a80;
+}
+:root {
+    --text_color : #e0fbfc;
+    --butText_color : #000;
+    --button_color : #e09f3e;
+    --color : #e0fbfc;
+    --div_color : #a4133c;
+    --bg_color : #590d22;
+}*/
+
 *{
     margin: 0;
     padding: 0;
@@ -14,14 +53,14 @@ body {
     justify-content: center; 
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: var(--bg_color);
+    color: var(--color);
 }
 
 div {
     display: flex;
     flex-direction: column;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--div_color);
     align-items: center;
     justify-content: center; 
     padding: 20px;
@@ -36,8 +75,9 @@ div {
     font-size: 4rem;
 }
 .time .text {
+    font-weight: 200;
     font-size: 1.25rem;
-    color: rgb(241, 163, 107);
+    color: var(--text_color);
 }
 
 
@@ -49,8 +89,15 @@ button {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    background-color: var(--button_color);
+    border: transparent;
+    color: var(--butText_color);
 }
 
+button:hover {
+    opacity: .75;
+}
+/*
 #startBtn {
     background-color: rgb(34, 248, 34);
 }
@@ -60,3 +107,4 @@ button {
 #stopBtn {
     background-color: rgb(248, 115, 115);
 }
+*/
